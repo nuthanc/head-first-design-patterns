@@ -1,8 +1,31 @@
 # Head First Design Patterns (2020 2nd Edition)
 
-I have recently updated all the code for Head First Design Patterns for the 2nd edition of the book, released in December, 2020.
+### Learning Principles
 
-Download the code and compile and run from the command line, or load the code into project in Eclipse using Java 8 or higher.
+* Make it **Visual**(By making it Bizarre, Eye-Catching, Strange)
+* Think Deeply by being **Curious**, Engaged, Inspired to solve Problems and generate new Knowledge
+* Touch **Emotions** like Surprise, Curiosity, Fun
+* Conversational style: Expected to Follow Along
 
-Other links for the book are available on the book page at <a href="http://wickedlysmart.com/head-first-design-patterns/">wickedlysmart.com</a>.
+1. Slow down. The more you understand, the less you have to memorize
+2. Write your own notes
+3. There Are No Dumb Questions
+4. Make this the last thing you read before bed. Or at least the last challenging thing
+5. Drink water. Lots of it
+6. Talk about it. Out loud or Explain to someone else
+7. Listen to your brain for Breaks
+8. Feel something!
+9. Design something!
 
+### Source code
+
+* http://wickedlysmart.com/head-first-design-patterns
+* https://github.com/nuthanc/head-first-design-patterns
+
+## Design Principle
+
+* Encapsulate things **that vary** and separate them from things **that remain the same**
+* Program to an **interface(supertype)**, not an implementation
+  * supertype meaning the declared type of the variables should be a supertype, usually an **abstract class or interface**
+  * By programming to an Interface/Supertype, the actual runtime object **isn't locked into the code**
+* Favor Composition over Inhertiance
