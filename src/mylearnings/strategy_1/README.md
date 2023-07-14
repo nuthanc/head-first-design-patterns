@@ -2,12 +2,12 @@
 
 * Check mylearnings/strategy_1 folder
 * Author's in headfirst/designpatterns/strategy folder
-* `Strategy Pattern` defines a **family of algorithms(behaviors)**, encapsulates each one, and makes makes them interchangeable
+* `Strategy Pattern` defines a **family of algorithms(behaviors)**, encapsulates each one, and makes makes them **interchangeable**
 * Strategy lets the **algorithm vary independently** from clients that use it
 
 #### Initial Game designed by Joe
 
-* SimUDuck App where there are different ducks swimming and quacking
+* *SimUDuck App* where there are different ducks swimming and quacking
 * `Duck Superclass`, and its `Subtypes(like MallardDuck, ReadheadDuck etc)` inheriting from Duck
 * Duck class has concrete `swim and quack` methods, but `abstract display` method(since each subtypes look different)
 * Subtypes **implement** display method

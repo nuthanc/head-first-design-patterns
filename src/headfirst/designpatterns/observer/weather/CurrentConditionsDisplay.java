@@ -6,7 +6,7 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private WeatherData weatherData;
 	
 	public CurrentConditionsDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
+		this.weatherData = weatherData; // Stored to call removeObserver in the future
 		weatherData.registerObserver(this);
 	}
 	

@@ -29,3 +29,6 @@
   * supertype meaning the declared type of the variables should be a supertype, usually an **abstract class or interface**
   * By programming to an Interface/Supertype, the actual runtime object **isn't locked into the code**
 * Favor **Composition** over Inhertiance
+* Strive for **Loosely Coupled Designs** betweeen **objects that interact**
+  * Interact with very little knowledge, like in case of Subjects all it knows is that Observers implement a certain Interface and the Subject uses that Interface
+  * It gives more Flexibility(add, delete or replace)
