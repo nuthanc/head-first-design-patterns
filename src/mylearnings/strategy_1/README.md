@@ -2,8 +2,8 @@
 
 * Check mylearnings/strategy_1 folder
 * Author's in headfirst/designpatterns/strategy folder
-* Strategy Pattern defines a family of algorithms, encapsulates each one, and makes makes them interchangeable
-* Strategy lets the algorithm vary independently from clients that use it
+* `Strategy Pattern` defines a **family of algorithms(behaviors)**, encapsulates each one, and makes makes them interchangeable
+* Strategy lets the **algorithm vary independently** from clients that use it
 
 #### Initial Game designed by Joe
 

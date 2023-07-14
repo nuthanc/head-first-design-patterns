@@ -28,4 +28,4 @@
 * Program to an **interface(supertype)**, not an implementation
   * supertype meaning the declared type of the variables should be a supertype, usually an **abstract class or interface**
   * By programming to an Interface/Supertype, the actual runtime object **isn't locked into the code**
-* Favor Composition over Inhertiance
+* Favor **Composition** over Inhertiance
