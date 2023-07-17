@@ -8,7 +8,7 @@
 #### Initial Game designed by Joe
 
 * *SimUDuck App* where there are different ducks swimming and quacking
-* `Duck Superclass`, and its `Subtypes(like MallardDuck, ReadheadDuck etc)` inheriting from Duck
+* `Duck Superclass`, and its `Subtypes(like MallardDuck, ReadHeadDuck etc)` inheriting from Duck
 * Duck class has concrete `swim and quack` methods, but `abstract display` method(since each subtypes look different)
 * Subtypes **implement** display method
 
@@ -21,7 +21,7 @@
 
 #### Spec would keep changing
 
-* Spec will keep changing and he needs to Override everytime that happens
+* Spec will keep changing and he needs to Override every time that happens
 * So he removes fly and quack from `Duck Superclass` and add Flyable and Quackable `interfaces`
 * This way only Ducks that fly and those that quack implement that interface
 
@@ -33,7 +33,7 @@
 * So we’ll make a set of **classes** whose entire reason for living is to **represent a behavior** (for example, “squeaking”) 
 * It’s the behavior class, rather than the Duck class(Sub-type), that will implement the behavior interface
 * So the hierarchy is `Duck Superclass(Same behavior) -> Interfaces(Varying Behavior) -> Behavior specific Concrete classes -> composed in Duck Subclass`
-* * By adding this Behavior specific Concrete classes which implement the Behavior Interface, now there is `Code reuse` and `Flexibility`(new behaviours can be added easily)
+* * By adding this Behavior specific Concrete classes which implement the Behavior Interface, now there is `Code reuse` and `Flexibility`(new behaviors can be added easily)
 * The Duck superclass has **reference variables** for the **behavior interface types** so that SubClasses(like MallardDuck) can initialize them in their constructor
 * Also for code reuse, **performFly and performQuack** are present in Duck Superclass
 * We have **Composed the behaviors** in the Subclasses and not Inherited it in order to have **Loose Coupling**
@@ -48,14 +48,14 @@ d.bark();
 Animal a = new Dog(); // Animal is Superclass of Dog
 a.makeSound();
 
-// Providing subtype(concrete implemenation object) at runtime
+// Providing subtype(concrete implementation object) at runtime
 Animal a = getAnimal(); // Assigning concrete implementation object at runtime
 a.makeSound();
 ```
 
 #### Setting Behavior Dynamically
 
-* setFlyBehavior and setQuackBehvior in Duck superclass for setting behavior dynamically
+* setFlyBehavior and setQuackBehavior in Duck superclass for setting behavior dynamically
 
 #### Design Puzzle Solution
 
@@ -76,4 +76,4 @@ a.makeSound();
 * Program to an **interface(supertype)**, not an implementation
   * supertype meaning the declared type of the variables should be a supertype, usually an **abstract class or interface**
   * By programming to an Interface/Supertype, the actual runtime object **isn't locked into the code**
-* Favor Composition over Inhertiance
+* Favor Composition over Inheritance

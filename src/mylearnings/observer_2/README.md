@@ -53,7 +53,7 @@ public void measurementsChanged() {
 * Another nice example is **Headhunter and Job Seekers**
 * Subject is the sole owner of the data
   * Cleaner OO design than allowing many objects to control the same data
-* The Observer Pattern is a greate example of **Loose Coupling**
+* The Observer Pattern is a great example of **Loose Coupling**
 
 #### The Observer Pattern Implementation
 
@@ -118,7 +118,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
   private WeatherData weatherData;
   private float currentPressure = 29.92f;
   private float lastPressure;
-  
+
   public ForecastDisplay(WeatherData weatherData) {
     this.weatherData = weatherData;
     weatherData.registerObserver(this);
@@ -139,7 +139,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
 
 ## Design Principle
 
-* Strive for **Loosely Coupled Designs** betweeen objects that interact(This is again the Principle of **Program to an Interface(supertype)**)
+* Strive for **Loosely Coupled Designs** between objects that interact(This is again the Principle of **Program to an Interface(supertype)**)
   * This gives lot of flexibility. Some of them are
     * The only thing the Subject knows about an Observer is that it implements a certain interface(Observer interface in our case)
     * Ability to add, remove or replace Observer at any time
