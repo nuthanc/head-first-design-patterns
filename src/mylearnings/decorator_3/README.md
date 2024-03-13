@@ -9,7 +9,7 @@
   * description reference
   * getDescription()
   * abstract cost() method
-* SubClasses implement cost method
+* SubClasses implement cost method and set description
   * Decaf
   * Espresso
   * DarkRoast

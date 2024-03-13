@@ -28,9 +28,13 @@
 * Program to an **interface(supertype)**, not an implementation
   * supertype meaning the declared type of the variables should be a supertype, usually an **abstract class or interface**
   * By programming to an Interface/Supertype, the actual runtime object **isn't locked into the code**
+* **Single Responsibility Principle**
+  * Behavior specific Concrete classes have a single responsibility
 * Favor **Composition** over Inheritance
 * Strive for **Loosely Coupled Designs** between **objects that interact**
   * Interact with very little knowledge, like in case of Subjects all it knows is that Observers implement a certain Interface and the Subject uses that Interface
   * It gives more Flexibility(add, delete or replace)
 * **Open Close Principle**
   * Classes should be open for extension, but closed for modification
+* **Dependency Inversion Principle**
+  * Depend upon abstractions and not on Concrete classes
