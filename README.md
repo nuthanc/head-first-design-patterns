@@ -38,3 +38,8 @@
   * Classes should be open for extension, but closed for modification
 * **Dependency Inversion Principle**
   * Depend upon abstractions and not on Concrete classes
+ 
+### For Js and Python
+
+* Break into smaller functions for SRP
+* Use dictionary or object literal for switching dynamically
