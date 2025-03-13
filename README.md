@@ -43,3 +43,21 @@
 
 * Break into smaller functions for SRP
 * Use dictionary or object literal for switching dynamically
+* Use generic function in Abstract Base class and get its specific implementation from sub-class if its one time use case. One step higher than this for re-usability is Strategy Design pattern
+```
+abstract class BaseDataPlaneFormModel {
+  abstract getCloudId(): string
+}
+
+class AwsDataPlaneFormModel extends BaseDataPlaneFormModel {
+  getCloud() {
+    return this.accountField.value()?.cloudAccountId
+  }
+}
+
+class GcpDataPlaneFormModel extends BaseDataPlaneFormModel {
+  getCloud() {
+    return this.projectField.value()?.cloudAccountId
+  }
+}
+```
